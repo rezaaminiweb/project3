@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.4s;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Oswald", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.ahrefs {
+  text-decoration: none;
+  color: white !important;
+  padding: 15px;
+  background: linear-gradient(blue);
+}
+
+.reza {
+  flex-wrap: wrap;
+  display: flex;
+}/*# sourceMappingURL=all.css.map */

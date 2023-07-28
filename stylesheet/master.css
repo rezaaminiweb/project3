@@ -1,0 +1,884 @@
+.chatbox {
+  cursor: pointer;
+  z-index: 55;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35px;
+  width: 70px;
+  height: 70px;
+  background-color: #20CBD4;
+  bottom: 20px;
+  right: 20px;
+}
+.chatbox > i {
+  font-size: 35px;
+  color: white;
+}
+
+.head_top {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.head_top > .box {
+  width: 100%;
+  background-color: #262626;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 5;
+}
+.head_top > .box > div {
+  display: flex;
+  width: 15%;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.head_top > .box > div > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.head_top > .box > div > div > a {
+  margin-left: 30px;
+  color: white;
+  font-size: 20px;
+  padding: 5px 20px;
+  background-color: #7AA93C;
+  border-radius: 5px;
+}
+.head_top > .box > div > div > a:hover {
+  opacity: 0.7;
+}
+.head_top > .box > div > figure {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.head_top > .box > div > figure > img {
+  display: flex;
+  width: 170px;
+}
+.head_top > .backgrand {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  height: 150vh;
+  background-image: url(../img/oshine-new-6.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  justify-content: center;
+}
+.head_top > .backgrand::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5058823529);
+}
+.head_top > .backgrand > .top {
+  z-index: 1;
+  width: 100%;
+  flex-wrap: wrap;
+  height: 70px;
+}
+.head_top > .backgrand > .top > div:nth-of-type(1) {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head_top > .backgrand > .top > div:nth-of-type(2) {
+  width: 75%;
+  height: 100%;
+  justify-content: end;
+  display: flex;
+  align-items: center;
+}
+.head_top > .backgrand > .top > div:nth-of-type(2) > nav > ul > li {
+  justify-content: center;
+}
+.head_top > .backgrand > .top > div:nth-of-type(2) > nav > ul > li a {
+  padding: 2px 20px;
+  color: white;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.head_top > .backgrand > .top > div:nth-of-type(2) > nav > ul > li a:hover {
+  color: rgba(0, 0, 255, 0.644);
+}
+.head_top > .backgrand > .top > div:nth-of-type(3) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+}
+.head_top > .backgrand > .top > div:nth-of-type(3) a {
+  font-weight: 200;
+  display: flex;
+  color: white;
+  background-color: orangered;
+  padding: 7px 30px;
+  border-radius: 20px;
+}
+.head_top > .backgrand > .bottom {
+  z-index: 1;
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.head_top > .backgrand > .bottom > h1 {
+  font-size: 60px;
+  color: white;
+}
+.head_top > .backgrand > .bottom > div > p {
+  color: rgb(148, 148, 148);
+  font-size: 25px;
+  text-align: justify;
+  -moz-text-align-last: center;
+       text-align-last: center;
+  width: 65%;
+}
+.head_top > .backgrand > .bottom > a {
+  color: white;
+  font-size: 26px;
+  width: 20%;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.4s !important;
+  background-image: linear-gradient(to right, #090979, #9c0095);
+  background-size: 200%;
+  background-position: left;
+}
+.head_top > .backgrand > .bottom > a:hover {
+  background-position: right;
+}
+.head_top > .backgrand > .bottom * {
+  padding: 10px 0px;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+}
+.content > .jabeh {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  position: relative;
+}
+.content > .jabeh > .boxx {
+  top: -30%;
+  left: 5%;
+  position: absolute;
+  width: 90%;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 2px 2px 35px 1px black;
+}
+.content > .jabeh > .boxx > div {
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  height: 320px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.content > .jabeh > .boxx > div:nth-of-type(3) {
+  padding-right: 40px;
+  padding-top: 15px;
+}
+.content > .jabeh > .boxx > div > div {
+  padding: 25px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.content > .jabeh > .boxx > div > div > div {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 80px;
+  align-items: flex-end;
+}
+.content > .jabeh > .boxx > div > div > div > i {
+  color: red;
+  justify-content: end;
+  font-size: 20px;
+}
+.content > .jabeh > .boxx > div > div > div > a {
+  width: 80%;
+  font-size: 23px;
+}
+.content > .jabeh > .boxx > div > div > div > a:hover {
+  color: blue;
+}
+.content > .jabeh > .boxx > div > div > div * {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content > .jabeh > .boxx > div > div > p {
+  font-size: 24px;
+  color: #444A50;
+  margin-top: 12px;
+  text-align: justify;
+}
+.content > .jabeh > .boxx > div > div > span {
+  display: flex;
+  font-weight: bolder;
+  font-size: 55px;
+  color: #232323;
+}
+.content > .jabeh > .boxx > div > div > .hos {
+  display: flex;
+  font-weight: bolder;
+  font-size: 55px;
+  color: #232323;
+}
+.content > .jabeh > .boxx > div > div > .hos::after {
+  content: "+";
+  color: #232323;
+  font-size: 40px;
+}
+.content > .jabeh > .boxx > div > div * {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content > .boxxx {
+  width: 100%;
+  height: 50px;
+}
+.content > .boxxx > .navv {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.content > .boxxx > .navv ul {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+}
+.content > .boxxx > .navv ul > li {
+  cursor: pointer;
+  text-transform: uppercase;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.content > .boxxx > .navv ul > li > a {
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 50px;
+  height: 40px;
+  border-radius: 30px;
+  color: white;
+  background-color: #4949ff;
+}
+.content > .shop {
+  width: 100%;
+  height: 1100vh;
+  justify-content: center;
+}
+.content > .shop > div {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.content > .shop > div > div {
+  padding: 30px;
+  width: 33%;
+  display: flex;
+  height: 300px;
+}
+.content > .shop > div > div > a {
+  display: flex;
+  width: 100%;
+  align-items: end;
+  align-content: end;
+}
+.content > .shop > div > div > a:hover > figure > .imagehold {
+  top: -20px;
+  left: 0;
+}
+.content > .shop > div > div > a > figure {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  align-items: end;
+  align-content: end;
+  height: 100%;
+}
+.content > .shop > div > div > a > figure > .imagehold {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.content > .shop > div > div > a > figure > .imagehold > img {
+  width: 90%;
+  height: 200px;
+}
+.content > .shop > div > div > a > figure > figcaption {
+  width: 50%;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+  font-size: 15px;
+  font-weight: 100;
+}
+.content > .shop > div > div > a * {
+  justify-content: center;
+  width: 100%;
+}
+.content > .ahr {
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+}
+.content > .ahr > a {
+  margin: 100px auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  color: white;
+  border-radius: 35px;
+  font-size: 35px;
+  font-weight: 200;
+  background-color: blue;
+  padding: 9px 60px;
+}
+.content > .siah {
+  width: 100%;
+  height: 250vh;
+  background-color: #101010;
+  position: relative;
+  justify-content: center;
+}
+.content > .siah > .absoul {
+  width: 80%;
+  height: 30%;
+  background-color: white;
+  position: absolute;
+  top: -230px;
+  box-shadow: 2px 2px 10px 5px black;
+}
+.content > .siah > .absoul > div {
+  width: 45%;
+  padding: 50px 50px;
+}
+.content > .siah > .absoul > div > h2 {
+  display: flex;
+  margin-bottom: 50px;
+}
+.content > .siah > .absoul > div > p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+.content > .siah > .absoul > div > i {
+  margin-bottom: 10px;
+}
+.content > .siah > .absoul > div > span {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.content > .siah > .absoul > div > a {
+  border-radius: 30px;
+  border: 1px solid blue;
+  width: 60%;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  color: blue;
+  margin-top: 40px;
+}
+.content > .siah > .absoul > div > a:hover {
+  color: white;
+  background-color: #3c3cff;
+}
+.content > .siah > .absoul > div > * {
+  width: 100%;
+  display: flex;
+}
+.content > .siah > .edameh {
+  flex-wrap: wrap;
+  margin-top: 350px;
+  width: 60%;
+  height: 400px;
+  justify-content: center;
+  align-content: baseline;
+  align-items: flex-end;
+}
+.content > .siah > .edameh > h2 {
+  width: 100%;
+  color: #494DF7;
+  font-size: 22px;
+  align-items: end;
+}
+.content > .siah > .edameh > h3 {
+  margin-top: 10px;
+  color: #DDDDDD;
+  width: 60%;
+  font-size: 26px;
+  text-align: center;
+}
+.content > .siah > .edameh > p {
+  font-size: 22px;
+  color: #A2A2A2;
+  width: 100%;
+  text-align: center;
+}
+.content > .siah > .edameh > * {
+  justify-content: center;
+  width: 80%;
+  display: flex;
+  height: 100px;
+}
+.content > .siah > .film {
+  width: 90%;
+}
+.content > .siah > .film > video {
+  width: 100%;
+  height: auto;
+}
+.content > .siah1 {
+  width: 100%;
+  height: 90vh;
+  background-color: #101010;
+  justify-content: center;
+  align-content: start;
+}
+.content > .siah1 > .box1 {
+  width: 90%;
+  height: 400px;
+}
+.content > .siah1 > .box1 > .langar {
+  flex-wrap: wrap;
+  width: 33%;
+  height: 100%;
+  align-content: center;
+  display: flex;
+}
+.content > .siah1 > .box1 > .langar > h2 {
+  color: white;
+}
+.content > .siah1 > .box1 > .langar > p {
+  color: #94A294;
+  padding-right: 35px;
+}
+.content > .siah1 > .box1 > .langar > figure {
+  width: 100%;
+  display: flex;
+}
+.content > .siah1 > .box1 > .langar > figure > img {
+  width: 15%;
+}
+.content > .siah1 > .box1 > .langar * {
+  padding: 15px 0px;
+  width: 100%;
+  display: flex;
+}
+.content > .siah1 > .ahref1 {
+  width: 100%;
+  justify-content: center;
+  height: 50px;
+}
+.content > .siah1 > .ahref1 > a {
+  margin: 0px 25px;
+  padding: 0px 40px;
+  color: white;
+  font-size: 29px;
+  border-radius: 35px;
+  display: flex;
+  background-color: rgb(94, 94, 252);
+  align-items: center;
+}
+.content > .bozorg {
+  width: 100%;
+  height: 160vh;
+  background-color: #DDDEE1;
+  align-items: center;
+}
+.content > .bozorg > div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.content > .bozorg > div > div {
+  width: 30%;
+  margin: 0px 35px;
+}
+.content > .bozorg > div > div > h2 {
+  font-size: 46px;
+}
+.content > .bozorg > div > div > p {
+  font-size: 16px;
+  color: #444A50;
+  line-height: 34px;
+}
+.content > .bozorg > div > div > a {
+  justify-content: center;
+  background-color: orangered;
+  width: 64%;
+  padding: 8px 0px;
+  color: white;
+  border-radius: 30px;
+  font-size: 24px;
+}
+.content > .bozorg > div > div * {
+  margin-bottom: 50px;
+  display: flex;
+  width: 100%;
+}
+.content .amini {
+  background-color: white;
+}
+.content .amini > div {
+  justify-content: end;
+}
+.content .amini > div > div > a {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+.content .amini > div > div > a:hover {
+  color: white;
+  background-color: #16844d;
+  border: none;
+}
+.content > .shopping {
+  width: 100%;
+  height: 280vh;
+  flex-wrap: wrap;
+  align-content: start;
+}
+.content > .shopping > div {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  align-content: center;
+}
+.content > .shopping > div > span {
+  color: #AF9F66;
+  font-size: 16px;
+}
+.content > .shopping > div > h2 {
+  font-size: 46px;
+}
+.content > .shopping > div > p {
+  width: 60%;
+  font-size: 20px;
+  text-align: center;
+}
+.content > .shopping > div * {
+  padding: 15px 0px;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+.content > .shopping > .kochakk {
+  justify-content: start;
+  align-content: start;
+  width: 100%;
+}
+.content > .shopping > .kochakk > div {
+  width: 25%;
+  display: flex;
+  padding: 0px 30px;
+}
+.content > .shopping > .kochakk > div > a > figure {
+  width: 100%;
+  display: flex;
+}
+.content > .shopping > .kochakk > div > a > figure > img {
+  width: 100%;
+  display: flex;
+}
+.content > .siah2 {
+  width: 100%;
+  height: 270vh;
+  background-color: #212122;
+  align-content: start;
+}
+.content > .siah2 > .siahtext {
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: start;
+}
+.content > .siah2 > .siahtext > p {
+  width: 40%;
+  color: #A3A69A;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 19px;
+  height: auto;
+}
+.content > .siah2 > .siahtext > h2 {
+  display: flex;
+  color: white;
+  font-size: 46px;
+}
+.content > .siah2 > .siahtext * {
+  height: 80px;
+  display: flex;
+  width: 100%;
+  align-content: start;
+  justify-content: center;
+}
+.content > .siah2 > .boxsiah {
+  padding-top: 30px;
+  margin: 0px auto;
+  width: 90%;
+  height: 140vh;
+}
+.content > .siah2 > .boxsiah > div {
+  width: 33%;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.content > .siah2 > .boxsiah > div > h2 {
+  color: white;
+}
+.content > .siah2 > .boxsiah > div > p {
+  line-height: 35px;
+  width: 90%;
+  color: #99AFBD;
+}
+.content > .siah2 > .boxsiah > div > i {
+  font-size: 50px;
+  color: rgb(95, 95, 255);
+}
+.content > .siah2 > .boxsiah > div > * {
+  padding: 15px 0px;
+  width: 100%;
+  display: flex;
+}
+.content > .siah2 > .matn {
+  margin: 0px auto;
+  width: 90%;
+}
+.content > .siah2 > .matn > div {
+  width: 33%;
+  display: flex;
+}
+.content > .siah2 > .matn > div > p {
+  padding-bottom: 20px;
+  display: flex;
+  width: 70%;
+  color: #A2A2A2;
+}
+.content > .siah2 > .matn > div > i {
+  font-size: 14px;
+  color: #3c3cff;
+  display: flex;
+  width: 30%;
+}
+.content > .matn2 {
+  height: 180vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #F7F7F7;
+  align-content: start;
+}
+.content > .matn2 > div {
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  display: flex;
+  align-content: end;
+  height: 250px;
+}
+.content > .matn2 > div > h2 {
+  font-size: 70px;
+  color: black;
+}
+.content > .matn2 > div > * {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.content > .matn2 > div > span {
+  padding-top: 30px;
+  color: orangered;
+  font-size: 16px;
+}
+.content > .matn2 > .rostam {
+  width: 100%;
+  height: 120vh;
+  padding-top: 25px;
+  justify-content: center !important;
+  align-content: start;
+}
+.content > .matn2 > .rostam > div {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.content > .matn2 > .rostam > div > i {
+  font-size: 20px;
+}
+.content > .matn2 > .rostam > div > span {
+  font-size: 24px;
+  font-weight: bolder;
+}
+.content > .matn2 > .rostam > div > * {
+  padding-top: 20px;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+.content > .matn2 > .rostam > div > p {
+  width: 80%;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+}
+.content > .showcase {
+  width: 100%;
+  align-content: start !important;
+  justify-content: start;
+}
+.content > .showcase > div {
+  margin-top: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+}
+.content > .showcase > div > h2 {
+  font-size: 72px;
+}
+.content > .showcase > div > p {
+  font-size: 35px;
+  color: #444A50;
+}
+.content > .showcase > div > * {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+.content > .showcase > .imaging {
+  width: 100%;
+  height: 190vh;
+  justify-content: center;
+  align-content: start;
+}
+.content > .showcase > .imaging > div {
+  width: 25%;
+  height: 250px;
+  padding: 40px;
+}
+.content > .showcase > .imaging > div > a {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.content > .showcase > .imaging > div > a:hover > figure {
+  top: -5px;
+  bottom: -5px;
+  right: -5px;
+  box-shadow: none;
+}
+.content > .showcase > .imaging > div > a > figure {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  box-shadow: 2px 2px 25px 5px black;
+}
+.content > .showcase > .imaging > div > a > figure > img {
+  width: 100%;
+  display: flex;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.content > .showcase > .foots {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-image: url(../img/oshine-lifestyle-03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  align-content: center;
+  justify-content: center;
+}
+.content > .showcase > .foots::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5803921569);
+  position: absolute;
+}
+.content > .showcase > .foots > p {
+  width: 70%;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+.content > .showcase > .foots > h2 {
+  color: white;
+  font-size: 50px;
+}
+.content > .showcase > .foots > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.content > .showcase > .foots > div > a {
+  justify-content: center !important;
+  padding: 15px 40px;
+  font-size: 26px;
+  color: white;
+  background-color: orangered;
+  border-radius: 30px;
+}
+.content > .showcase > .foots > * {
+  padding: 20px 0px;
+  z-index: 2;
+  color: white;
+  display: flex;
+  width: 100%;
+}/*# sourceMappingURL=master.css.map */
